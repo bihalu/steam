@@ -39,7 +39,13 @@ apt install steamcmd
 ## install ark server
 
 ```bash
-/home/steam/.local/share/Steam/steamcmd/steamcmd.sh +force_install_dir /home/steam/ark +login anonymous +app_update 376030 validate +quit
+/usr/games/steamcmd +force_install_dir /home/steam/ark/ +login anonymous +app_update 376030 validate +quit
 ```
 
-## 
+## start ark server
+
+```bash
+export SERVERNAME=myark
+export ADMINPASSWORD=topsecret
+/home/steam/ark/ShooterGame/Binaries/Linux/ShooterGameServer TheIsland?listen?SessionName=$SERVERNAME?ServerAdminPassword=$ADMINPASSWORT -server -log
+```
